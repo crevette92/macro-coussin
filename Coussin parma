@@ -1,0 +1,10 @@
+Sub FigerEnValeurs()
+    Dim adresses As Variant, a As Variant
+    adresses = Array("J4:L4", "M4:N4", "P4", "W4", "Z4", "S12:S21", "V13:V16")
+
+    With ActiveSheet
+        For Each a In adresses
+            .Range(a).Value = .Range(a).Value
+        Next a
+    End With
+End Sub
